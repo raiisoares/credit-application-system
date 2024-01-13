@@ -3,8 +3,10 @@ spring:
     url: jdbc:h2:mem:credit_application_system_db
     username: sa
   jpa:
+    show-sql?: true
     hibernate:
-      ddl-auto: create-drop
+      properties:
+        hibernate.format_sql: true
   h2:
     console:
       enabled: true
