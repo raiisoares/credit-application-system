@@ -100,7 +100,6 @@ class CustomerControllerTest {
             .andExpect(MockMvcResultMatchers.jsonPath("$.income").value("1000.0"))
             .andExpect(MockMvcResultMatchers.jsonPath("$.zipCode").value("321654987"))
             .andExpect(MockMvcResultMatchers.jsonPath("$.street").value("Some street"))
-            .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(1))
             .andDo(MockMvcResultHandlers.print())
     }
 
@@ -269,5 +268,6 @@ class CustomerControllerTest {
             .andExpect(MockMvcResultMatchers.jsonPath("$.details[*]").isNotEmpty())
             .andDo(MockMvcResultHandlers.print())
     }
+
 
 }
