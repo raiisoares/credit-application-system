@@ -47,7 +47,7 @@ class CreditRepositoryTest {
         firstName: String = "Test",
         lastName: String = "LastName",
         cpf: String = "65717209061",
-        email: String = "maria@email.com",
+        email: String = "test@email.com",
         password: String = "123456",
         zipCode: String = "321654987",
         street: String = "Some street",
